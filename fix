@@ -65,16 +65,17 @@ local flags = library.flags
 local config_flags = library.config_flags
 
 local themes = {
-	preset = {
-		["outline"] = rgb(32, 32, 38), --
-		["inline"] = rgb(60, 55, 75), --
-		["accent"] = rgb(100, 100, 255), --
-		["contrast"] = rgb(35, 35, 47),
-		["text"] = rgb(170, 170, 170),
-		["unselected_text"] = rgb(90, 90, 90),
-		["text_outline"] = rgb(0, 0, 0),
-		["glow"] = rgb(100, 100, 255),
-	},
+preset = {
+	["outline"] = rgb(0, 0, 0),     
+	["inline"] = rgb(59, 51, 74),           
+	["accent"] = rgb(255, 217, 142),      
+	["contrast"] = rgb(19, 16, 39),         
+	["text"] = rgb(255, 249, 240),          
+	["unselected_text"] = rgb(150, 140, 160), 
+	["text_outline"] = rgb(0, 0, 0),
+	["glow"] = rgb(255, 217, 142),           
+}
+
 
 	utility = {
 		["outline"] = {
@@ -170,7 +171,7 @@ end
 if not isfile(library.directory .. "/fonts/main.ttf") then
 	writefile(
 		library.directory .. "/fonts/main.ttf",
-		game:HttpGet("https://github.com/i77lhm/storage/raw/refs/heads/main/fonts/fs-tahoma-8px.ttf")
+		game:HttpGet("https://github.com/emptyusesdx9/vaderpaste/blob/main/main.ttf")
 	)
 end
 
